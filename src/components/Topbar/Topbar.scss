@@ -1,0 +1,12 @@
+.ant-menu-item-active,
+.ant-menu-item-selected {
+  color: rgba(20, 23, 24, 1) !important;
+}
+
+.ant-menu-item-selected::after {
+  border-bottom-color: rgba(20, 23, 24, 1) !important;
+}
+
+.ant-menu-submenu-active::after {
+  border-bottom-color: rgba(20, 23, 24, 1) !important;
+}

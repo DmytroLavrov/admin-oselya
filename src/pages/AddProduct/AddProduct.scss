@@ -1,0 +1,70 @@
+@use '../../styles/mixins';
+
+.add-product {
+  &__title {
+    margin-bottom: 24px;
+  }
+  &__form {
+  }
+  &__form-group {
+    margin-bottom: 20px;
+
+    p {
+      font-family: var(--font-third);
+      font-weight: 700;
+      font-size: 12px;
+      line-height: 100%;
+      text-transform: uppercase;
+      color: #6c7275;
+
+      margin-bottom: 5px;
+    }
+  }
+  &__label {
+    font-family: var(--font-third);
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 100%;
+    text-transform: uppercase;
+    color: #6c7275;
+  }
+  &__input {
+    border: 1px solid #cbcbcb;
+    border-radius: 6px;
+    // padding: 0px 16px;
+    width: clamp(290px, 13.589rem + 22.68vw, 544px);
+    height: 40px;
+    background: #fff;
+
+    @include mixins.media-md {
+      width: 100%;
+    }
+  }
+  &__textarea {
+    border: 1px solid #cbcbcb;
+    border-radius: 6px;
+    padding: 10px;
+    height: 140px;
+    width: clamp(290px, 13.589rem + 22.68vw, 544px);
+
+    @include mixins.media-md {
+      width: 100%;
+    }
+  }
+  &__btn {
+    padding: 7px 24px;
+    width: auto;
+  }
+}
+
+.ant-select {
+  border: 1px solid #cbcbcb !important;
+  border-radius: 6px !important;
+  // display: flex;
+  // align-items: center;
+  width: clamp(290px, 13.589rem + 22.68vw, 544px) !important;
+
+  @include mixins.media-md {
+    width: 100% !important;
+  }
+}

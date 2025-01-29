@@ -1,0 +1,141 @@
+.products {
+  font-family: var(--font-third);
+  height: 100%;
+
+  &__title {
+    margin-bottom: 20px;
+  }
+
+  &__spinner {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+  }
+
+  &__content {
+    display: flex;
+    flex-direction: column;
+
+    .products__table-container {
+      display: block;
+    }
+
+    .products__cards-container {
+      display: none;
+      flex-wrap: wrap;
+      gap: 20px;
+
+      .products__card {
+        width: 100%;
+        padding: 15px;
+        border: 1px solid #ddd;
+        border-radius: 8px;
+        background-color: #fff;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        text-align: center;
+
+        .products__image {
+          width: 100%;
+          max-width: 120px;
+          height: auto;
+        }
+
+        .products__name {
+          font-size: 18px;
+          font-weight: bold;
+          margin-top: 10px;
+        }
+
+        .products__category {
+          font-size: 14px;
+          color: #666;
+        }
+
+        .products__price {
+          font-size: 16px;
+          font-weight: bold;
+          color: #141718;
+          margin-top: 10px;
+
+          &::before {
+            content: attr(data-value);
+          }
+        }
+
+        .products__button {
+          padding: 6px 12px;
+          background: #e74c3c;
+          color: #fff;
+          border: none;
+          border-radius: 4px;
+          cursor: pointer;
+          transition: background 0.3s;
+          margin-top: 10px;
+
+          &:hover {
+            background: #dd5243;
+          }
+        }
+      }
+    }
+  }
+
+  @media (max-width: 640px) {
+    .products__table-container {
+      display: none;
+    }
+
+    .products__cards-container {
+      display: flex;
+    }
+  }
+
+  .products__table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+
+    th,
+    td {
+      padding: 12px 16px;
+      text-align: left;
+      border: 1px solid #ddd;
+    }
+
+    td:last-child {
+      text-align: center;
+    }
+
+    td::before {
+      content: attr(data-value);
+    }
+
+    th {
+      background-color: #f4f4f4;
+      font-weight: bold;
+    }
+
+    tr:hover {
+      background-color: #f1f1f1;
+    }
+
+    img {
+      width: 120px !important;
+    }
+
+    &__button {
+      padding: 6px 12px;
+      background: #007bff;
+      color: #fff;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+      transition: background 0.3s;
+
+      &:hover {
+        background: #0056b3;
+      }
+    }
+  }
+}

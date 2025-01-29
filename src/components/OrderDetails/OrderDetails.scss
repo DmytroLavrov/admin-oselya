@@ -122,6 +122,12 @@
   &__status {
     margin-top: 10px;
 
+    h3 {
+      font-weight: 600;
+      font-size: 16px;
+      margin-bottom: 8px;
+    }
+
     &__select {
       position: relative;
       width: 100%;
@@ -146,25 +152,6 @@
 
       &:hover {
         // background-color: #151617;
-      }
-    }
-  }
-  @media (max-width: 320px) {
-    &__status {
-      h3 {
-        font-weight: 600;
-        font-size: 16px;
-        margin-bottom: 8px;
-      }
-
-      &__select {
-        padding: 6px;
-        font-size: 12px;
-      }
-
-      &__update-btn {
-        padding: 8px;
-        font-size: 14px;
       }
     }
   }

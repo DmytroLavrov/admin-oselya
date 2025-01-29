@@ -19,6 +19,13 @@ body {
   flex-grow: 1;
 }
 
+body.modal-open {
+  overflow: hidden;
+}
+
+main .login {
+  display: none;
+}
 // a {
 // 	color: var(--link-color);
 // }

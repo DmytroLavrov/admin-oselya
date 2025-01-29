@@ -6,10 +6,13 @@ import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import { Layout } from 'antd';
 
 import Header from '@layouts/Header/Header';
-import Login from './components/Login/Login';
-import Topbar from './components/Topbar/Topbar';
+import Login from '@components/Login/Login';
+import Topbar from '@components/Topbar/Topbar';
+import Sidebar from '@components/Sidebar/Sidebar';
 import Products from '@pages/Products/Products';
 import Orders from '@pages/Orders/Orders';
+import AddProduct from '@pages/AddProduct/AddProduct';
+
 const { Content } = Layout;
 
 export const backendUrl = import.meta.env.VITE_BACKEND_URL;

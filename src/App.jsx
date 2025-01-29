@@ -54,6 +54,7 @@ const App = () => {
               <Layout style={{ padding: '0 24px 24px', background: '#fff' }}>
                 <Content style={{ padding: 24, margin: 0, minHeight: 280 }}>
                   <Routes>
+                    <Route path="/" element={<Products token={token} />} />
                     <Route
                       path="/add-product"
                       element={<AddProduct token={token} />}
